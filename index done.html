@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathini Aravind - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background: linear-gradient(135deg, #1e1e2f, #121212); color: white; text-align: center; }
+        header { display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; text-align: center; animation: slideIn 2s ease-in-out; }
+        header h1 { font-size: 3rem; font-weight: 600; color: #ffcc00; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .intro { animation: moveLeftToCenter 2s ease-in-out; }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.9); padding: 15px 0; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 500; transition: color 0.3s, transform 0.3s; }
+        nav a:hover { color: #ffcc00; transform: scale(1.1); }
+        section { padding: 80px 10%; animation: fadeInUp 1.5s ease-in-out; }
+        h2 { font-size: 2.2rem; margin-bottom: 20px; color: #ffcc00; position: relative; display: inline-block; }
+        h2::after { content: ''; display: block; width: 100%; height: 4px; background: #ffcc00; margin: 8px auto 0; border-radius: 2px; }
+        ul { list-style: none; text-align: left; max-width: 800px; margin: auto; line-height: 1.8; }
+        ul li { margin: 10px 0; }
+        .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; background: #ffcc00; color: black; font-weight: bold; border-radius: 30px; text-decoration: none; transition: background 0.3s, transform 0.3s; animation: bounce 1.5s infinite alternate; }
+        .btn:hover { background: #e6b800; transform: scale(1.1); }
+        @keyframes slideIn { from { opacity: 0; transform: translateX(-100px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+        @keyframes moveLeftToCenter { from { opacity: 0; transform: translateX(-100px); } to { opacity: 1; transform: translateX(0); } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <div class="intro">
+            <h1>Bathini Aravind</h1>
+            <p>Data Analyst | SQL | Python | Power BI | Tableau</p>
+        </div>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Highly motivated Data Analyst with expertise in SQL, Python, Excel, Power BI, and Tableau. Specializes in data analysis, business intelligence, and data visualization.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Technical:</b> SQL, Python (Pandas, NumPy, Matplotlib), Excel, Power BI, Tableau</li>
+            <li><b>Analytical:</b> Data Cleaning, Trend Analysis, Forecasting, Reporting</li>
+            <li><b>Soft Skills:</b> Problem-Solving, Communication, Team Collaboration</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Optimization of Medical Inventory:</b></li>
+            <ul>
+                <li><b>Business Problem:</b> To minimize the bounce rate and reduce patient dissatisfaction, business failure, reduce bounce rate.</li>
+                <li><b>Business Solution:</b> Collected data from various research paper sources, preprocessed using Python, SQL, and EDA. Analyzed data using Power BI, Tableau, and Google Data Studio.</li>
+                <li><b>Technology Stack:</b> SQL, Python, EDA, Tableau Desktop, Tableau Server.</li>
+                <li><b>Business Benefits:</b> Reduced bounce rate by at least 30%. Increased revenue by at least 20 lacs INR by reducing bounce rate.</li>
+
+        </ul>
+    </section>
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <ul>
+            <li><b>Bachelor of Commerce (CA):</b> Sathavahana University (2024) - 71.5% (Fist Division With Distinction)</li>
+            <li><b>MBA in Finance:</b> Pursuing at Jawaharlal Nehru University, Hyderabad</li>
+            <li><b>Certifications:</b> Python (ISO), Excel (Coursera), Power BI & SQL (360DigiTMG)</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aravindbattini1800@gmail.com">aravindbattini1800@gmail.com</a></p>
+        <p>Phone: <a href="tel:8328194891">8328194891</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/aravind-battini" target="_blank">linkedin.com/in/aravind-battini</a></p>
+    </section>
+</body>
+</html>
